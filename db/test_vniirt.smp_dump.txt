@@ -1,0 +1,9 @@
+
+State Machine - |top_module|current_state
+Name current_state.ONET current_state.ONT current_state.ONST current_state.ONW current_state.ONR current_state.IDLE 
+current_state.IDLE 0 0 0 0 0 0 
+current_state.ONR 0 0 0 0 1 1 
+current_state.ONW 0 0 0 1 0 1 
+current_state.ONST 0 0 1 0 0 1 
+current_state.ONT 0 1 0 0 0 1 
+current_state.ONET 1 0 0 0 0 1 

@@ -122,15 +122,17 @@ module top_module #(
 				end
 			end
 			default : begin : case_default
-				if (oen_for_comparators[k]) begin
-					data_sorted[k] = outputs_comps_A[k];
-				end
-				else begin
-					if (oen_for_comparators[k - 1]) begin
-						data_sorted[k] = outputs_comps_B[k - 1];
+				if (k > 0 && k < 2**ADR_WIDTH - 1) begin
+					if (oen_for_comparators[k]) begin
+						data_sorted[k] = outputs_comps_A[k];
 					end
 					else begin
-						data_sorted[k] = inner_buffer[k];
+						if (oen_for_comparators[k - 1]) begin
+							data_sorted[k] = outputs_comps_B[k - 1];
+						end
+						else begin
+							data_sorted[k] = inner_buffer[k];
+						end
 					end
 				end
 			end
@@ -140,26 +142,9 @@ module top_module #(
 		end
 	endgenerate
 
-	generate // sync logic for input buffer: rewrite sort_data into input buffer
-		genvar j;
-		for (j = 0; j < 2**ADR_WIDTH; j = j + 1)
-		begin:update_buffer
-			always @(posedge clk_i) begin
-				if (async_rst_i) begin
-					inner_buffer[j] <= 0;
-					data_sorted[j] <= 0;
-				end 
-				else if (clk_i) begin
-					if (current_state == ONW && cycle_counter1 != 0) begin
-						inner_buffer[j] <= data_sorted[j];
-					end
-				end
-			end
-		end
-	endgenerate
-
 	always @(posedge clk_i or posedge async_rst_i) begin
 		if (async_rst_i) begin
+			integer i = 0;
 			busy_o_r <= 1'b0;
 			sop_o_r <= 1'b0;
 			eop_o_r <= 1'b0;
@@ -167,6 +152,11 @@ module top_module #(
 			val_o_r <= 1'b0;
 			words_counter <= 0;
 			current_state <= IDLE;
+			for (i = 0; i < 2**ADR_WIDTH; i = i + 1)
+			begin
+				inner_buffer[i] <= 0;
+				//data_sorted[i] <= 0;
+			end
 		end
 		else if (clk_i) begin
 			case (current_state)
@@ -202,6 +192,13 @@ module top_module #(
 				
 			end
 			ONW : begin
+				if (cycle_counter1 != 0) begin
+					integer j = 0;
+					for (j = 0; j < 2**ADR_WIDTH - 1; j = j + 1)
+					begin
+						inner_buffer[j] <= data_sorted[j];
+					end
+				end
 				// More efficient realization of bubble sort. For hardware realization need 2*N-3 cycles with N = number of words
 				if (cycle_counter_direction) begin
 					if (cycle_counter1 < words_count) begin	

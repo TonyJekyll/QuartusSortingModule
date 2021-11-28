@@ -1,5 +1,5 @@
 Analysis & Synthesis report for test_vniirt
-Mon Nov 29 00:10:32 2021
+Mon Nov 29 01:00:00 2021
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -10,8 +10,53 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
   2. Analysis & Synthesis Summary
   3. Analysis & Synthesis Settings
   4. Parallel Compilation
-  5. Analysis & Synthesis Messages
-  6. Analysis & Synthesis Suppressed Messages
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. State Machine - |top_module|current_state
+  9. Registers Removed During Synthesis
+ 10. General Register Statistics
+ 11. Inverted Register Statistics
+ 12. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 13. Parameter Settings for User Entity Instance: Top-level Entity: |top_module
+ 14. Parameter Settings for User Entity Instance: decoder:decoder_instance
+ 15. Parameter Settings for User Entity Instance: comparator:instance_of_comparators[1].comparators
+ 16. Parameter Settings for User Entity Instance: comparator:instance_of_comparators[2].comparators
+ 17. Parameter Settings for User Entity Instance: comparator:instance_of_comparators[3].comparators
+ 18. Parameter Settings for User Entity Instance: comparator:instance_of_comparators[4].comparators
+ 19. Parameter Settings for User Entity Instance: comparator:instance_of_comparators[5].comparators
+ 20. Parameter Settings for User Entity Instance: comparator:instance_of_comparators[6].comparators
+ 21. Parameter Settings for User Entity Instance: comparator:instance_of_comparators[7].comparators
+ 22. Parameter Settings for User Entity Instance: comparator:instance_of_comparators[8].comparators
+ 23. Parameter Settings for User Entity Instance: comparator:instance_of_comparators[9].comparators
+ 24. Parameter Settings for User Entity Instance: comparator:instance_of_comparators[10].comparators
+ 25. Parameter Settings for User Entity Instance: comparator:instance_of_comparators[11].comparators
+ 26. Parameter Settings for User Entity Instance: comparator:instance_of_comparators[12].comparators
+ 27. Parameter Settings for User Entity Instance: comparator:instance_of_comparators[13].comparators
+ 28. Parameter Settings for User Entity Instance: comparator:instance_of_comparators[14].comparators
+ 29. Parameter Settings for User Entity Instance: comparator:instance_of_comparators[15].comparators
+ 30. Parameter Settings for User Entity Instance: comparator:instance_of_comparators[16].comparators
+ 31. Parameter Settings for User Entity Instance: comparator:instance_of_comparators[17].comparators
+ 32. Parameter Settings for User Entity Instance: comparator:instance_of_comparators[18].comparators
+ 33. Parameter Settings for User Entity Instance: comparator:instance_of_comparators[19].comparators
+ 34. Parameter Settings for User Entity Instance: comparator:instance_of_comparators[20].comparators
+ 35. Parameter Settings for User Entity Instance: comparator:instance_of_comparators[21].comparators
+ 36. Parameter Settings for User Entity Instance: comparator:instance_of_comparators[22].comparators
+ 37. Parameter Settings for User Entity Instance: comparator:instance_of_comparators[23].comparators
+ 38. Parameter Settings for User Entity Instance: comparator:instance_of_comparators[24].comparators
+ 39. Parameter Settings for User Entity Instance: comparator:instance_of_comparators[25].comparators
+ 40. Parameter Settings for User Entity Instance: comparator:instance_of_comparators[26].comparators
+ 41. Parameter Settings for User Entity Instance: comparator:instance_of_comparators[27].comparators
+ 42. Parameter Settings for User Entity Instance: comparator:instance_of_comparators[28].comparators
+ 43. Parameter Settings for User Entity Instance: comparator:instance_of_comparators[29].comparators
+ 44. Parameter Settings for User Entity Instance: comparator:instance_of_comparators[30].comparators
+ 45. Parameter Settings for User Entity Instance: comparator:instance_of_comparators[31].comparators
+ 46. Port Connectivity Checks: "comparator:instance_of_comparators[31].comparators"
+ 47. Port Connectivity Checks: "decoder:decoder_instance"
+ 48. Post-Synthesis Netlist Statistics for Top Partition
+ 49. Elapsed Time Per Partition
+ 50. Analysis & Synthesis Messages
+ 51. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -35,22 +80,27 @@ https://fpgasoftware.intel.com/eula.
 
 
 
-+---------------------------------------------------------------------------+
-; Analysis & Synthesis Summary                                              ;
-+-----------------------------+---------------------------------------------+
-; Analysis & Synthesis Status ; Failed - Mon Nov 29 00:10:32 2021           ;
-; Quartus Prime Version       ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
-; Revision Name               ; test_vniirt                                 ;
-; Top-level Entity Name       ; top_module                                  ;
-; Family                      ; Cyclone V                                   ;
-; Logic utilization (in ALMs) ; N/A until Partition Merge                   ;
-; Total registers             ; N/A until Partition Merge                   ;
-; Total pins                  ; N/A until Partition Merge                   ;
-; Total virtual pins          ; N/A until Partition Merge                   ;
-; Total block memory bits     ; N/A until Partition Merge                   ;
-; Total PLLs                  ; N/A until Partition Merge                   ;
-; Total DLLs                  ; N/A until Partition Merge                   ;
-+-----------------------------+---------------------------------------------+
++-------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                  ;
++---------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status     ; Successful - Mon Nov 29 01:00:00 2021       ;
+; Quartus Prime Version           ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
+; Revision Name                   ; test_vniirt                                 ;
+; Top-level Entity Name           ; top_module                                  ;
+; Family                          ; Cyclone V                                   ;
+; Logic utilization (in ALMs)     ; N/A                                         ;
+; Total registers                 ; 293                                         ;
+; Total pins                      ; 25                                          ;
+; Total virtual pins              ; 0                                           ;
+; Total block memory bits         ; 0                                           ;
+; Total DSP Blocks                ; 0                                           ;
+; Total HSSI RX PCSs              ; 0                                           ;
+; Total HSSI PMA RX Deserializers ; 0                                           ;
+; Total HSSI TX PCSs              ; 0                                           ;
+; Total HSSI PMA TX Serializers   ; 0                                           ;
+; Total PLLs                      ; 0                                           ;
+; Total DLLs                      ; 0                                           ;
++---------------------------------+---------------------------------------------+
 
 
 +---------------------------------------------------------------------------------------------------------------------------+
@@ -149,11 +199,593 @@ https://fpgasoftware.intel.com/eula.
 ; Maximum allowed            ; 4           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 1           ;
+; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
+;     Processor 2            ;   0.0%      ;
+;     Processor 3            ;   0.0%      ;
+;     Processor 4            ;   0.0%      ;
 +----------------------------+-------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                   ;
++----------------------------------+-----------------+------------------------+------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                     ; Library ;
++----------------------------------+-----------------+------------------------+------------------------------------------------------------------+---------+
+; src/VerilogHDL/comparator.v      ; yes             ; User Verilog HDL File  ; G:/fpga_projects/Quartus/test_vniirt/src/VerilogHDL/comparator.v ;         ;
+; src/VerilogHDL/top_module.v      ; yes             ; User Verilog HDL File  ; G:/fpga_projects/Quartus/test_vniirt/src/VerilogHDL/top_module.v ;         ;
++----------------------------------+-----------------+------------------------+------------------------------------------------------------------+---------+
+
+
++-----------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary               ;
++---------------------------------------------+-------------+
+; Resource                                    ; Usage       ;
++---------------------------------------------+-------------+
+; Estimate of Logic utilization (ALMs needed) ; 544         ;
+;                                             ;             ;
+; Combinational ALUT usage for logic          ; 815         ;
+;     -- 7 input functions                    ; 1           ;
+;     -- 6 input functions                    ; 263         ;
+;     -- 5 input functions                    ; 371         ;
+;     -- 4 input functions                    ; 79          ;
+;     -- <=3 input functions                  ; 101         ;
+;                                             ;             ;
+; Dedicated logic registers                   ; 293         ;
+;                                             ;             ;
+; I/O pins                                    ; 25          ;
+;                                             ;             ;
+; Total DSP Blocks                            ; 0           ;
+;                                             ;             ;
+; Maximum fan-out node                        ; clk_i~input ;
+; Maximum fan-out                             ; 293         ;
+; Total fan-out                               ; 5461        ;
+; Average fan-out                             ; 4.72        ;
++---------------------------------------------+-------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                            ;
++---------------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------------------------+-------------+--------------+
+; Compilation Hierarchy Node                              ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                            ; Entity Name ; Library Name ;
++---------------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------------------------+-------------+--------------+
+; |top_module                                             ; 815 (605)           ; 293 (293)                 ; 0                 ; 0          ; 25   ; 0            ; |top_module                                                    ; top_module  ; work         ;
+;    |comparator:instance_of_comparators[10].comparators| ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_module|comparator:instance_of_comparators[10].comparators ; comparator  ; work         ;
+;    |comparator:instance_of_comparators[11].comparators| ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_module|comparator:instance_of_comparators[11].comparators ; comparator  ; work         ;
+;    |comparator:instance_of_comparators[12].comparators| ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_module|comparator:instance_of_comparators[12].comparators ; comparator  ; work         ;
+;    |comparator:instance_of_comparators[13].comparators| ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_module|comparator:instance_of_comparators[13].comparators ; comparator  ; work         ;
+;    |comparator:instance_of_comparators[14].comparators| ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_module|comparator:instance_of_comparators[14].comparators ; comparator  ; work         ;
+;    |comparator:instance_of_comparators[15].comparators| ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_module|comparator:instance_of_comparators[15].comparators ; comparator  ; work         ;
+;    |comparator:instance_of_comparators[16].comparators| ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_module|comparator:instance_of_comparators[16].comparators ; comparator  ; work         ;
+;    |comparator:instance_of_comparators[17].comparators| ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_module|comparator:instance_of_comparators[17].comparators ; comparator  ; work         ;
+;    |comparator:instance_of_comparators[18].comparators| ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_module|comparator:instance_of_comparators[18].comparators ; comparator  ; work         ;
+;    |comparator:instance_of_comparators[19].comparators| ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_module|comparator:instance_of_comparators[19].comparators ; comparator  ; work         ;
+;    |comparator:instance_of_comparators[1].comparators|  ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_module|comparator:instance_of_comparators[1].comparators  ; comparator  ; work         ;
+;    |comparator:instance_of_comparators[20].comparators| ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_module|comparator:instance_of_comparators[20].comparators ; comparator  ; work         ;
+;    |comparator:instance_of_comparators[21].comparators| ; 6 (6)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_module|comparator:instance_of_comparators[21].comparators ; comparator  ; work         ;
+;    |comparator:instance_of_comparators[22].comparators| ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_module|comparator:instance_of_comparators[22].comparators ; comparator  ; work         ;
+;    |comparator:instance_of_comparators[23].comparators| ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_module|comparator:instance_of_comparators[23].comparators ; comparator  ; work         ;
+;    |comparator:instance_of_comparators[24].comparators| ; 6 (6)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_module|comparator:instance_of_comparators[24].comparators ; comparator  ; work         ;
+;    |comparator:instance_of_comparators[25].comparators| ; 8 (8)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_module|comparator:instance_of_comparators[25].comparators ; comparator  ; work         ;
+;    |comparator:instance_of_comparators[26].comparators| ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_module|comparator:instance_of_comparators[26].comparators ; comparator  ; work         ;
+;    |comparator:instance_of_comparators[27].comparators| ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_module|comparator:instance_of_comparators[27].comparators ; comparator  ; work         ;
+;    |comparator:instance_of_comparators[28].comparators| ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_module|comparator:instance_of_comparators[28].comparators ; comparator  ; work         ;
+;    |comparator:instance_of_comparators[29].comparators| ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_module|comparator:instance_of_comparators[29].comparators ; comparator  ; work         ;
+;    |comparator:instance_of_comparators[2].comparators|  ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_module|comparator:instance_of_comparators[2].comparators  ; comparator  ; work         ;
+;    |comparator:instance_of_comparators[30].comparators| ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_module|comparator:instance_of_comparators[30].comparators ; comparator  ; work         ;
+;    |comparator:instance_of_comparators[31].comparators| ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_module|comparator:instance_of_comparators[31].comparators ; comparator  ; work         ;
+;    |comparator:instance_of_comparators[3].comparators|  ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_module|comparator:instance_of_comparators[3].comparators  ; comparator  ; work         ;
+;    |comparator:instance_of_comparators[4].comparators|  ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_module|comparator:instance_of_comparators[4].comparators  ; comparator  ; work         ;
+;    |comparator:instance_of_comparators[5].comparators|  ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_module|comparator:instance_of_comparators[5].comparators  ; comparator  ; work         ;
+;    |comparator:instance_of_comparators[6].comparators|  ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_module|comparator:instance_of_comparators[6].comparators  ; comparator  ; work         ;
+;    |comparator:instance_of_comparators[7].comparators|  ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_module|comparator:instance_of_comparators[7].comparators  ; comparator  ; work         ;
+;    |comparator:instance_of_comparators[8].comparators|  ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_module|comparator:instance_of_comparators[8].comparators  ; comparator  ; work         ;
+;    |comparator:instance_of_comparators[9].comparators|  ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_module|comparator:instance_of_comparators[9].comparators  ; comparator  ; work         ;
+;    |decoder:decoder_instance|                           ; 43 (43)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_module|decoder:decoder_instance                           ; decoder     ; work         ;
++---------------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------------------------+-------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
+Encoding Type:  One-Hot
++-----------------------------------------------------------------------------------------------------------------------------------------------+
+; State Machine - |top_module|current_state                                                                                                     ;
++--------------------+--------------------+-------------------+--------------------+-------------------+-------------------+--------------------+
+; Name               ; current_state.ONET ; current_state.ONT ; current_state.ONST ; current_state.ONW ; current_state.ONR ; current_state.IDLE ;
++--------------------+--------------------+-------------------+--------------------+-------------------+-------------------+--------------------+
+; current_state.IDLE ; 0                  ; 0                 ; 0                  ; 0                 ; 0                 ; 0                  ;
+; current_state.ONR  ; 0                  ; 0                 ; 0                  ; 0                 ; 1                 ; 1                  ;
+; current_state.ONW  ; 0                  ; 0                 ; 0                  ; 1                 ; 0                 ; 1                  ;
+; current_state.ONST ; 0                  ; 0                 ; 1                  ; 0                 ; 0                 ; 1                  ;
+; current_state.ONT  ; 0                  ; 1                 ; 0                  ; 0                 ; 0                 ; 1                  ;
+; current_state.ONET ; 1                  ; 0                 ; 0                  ; 0                 ; 0                 ; 1                  ;
++--------------------+--------------------+-------------------+--------------------+-------------------+-------------------+--------------------+
+
+
++------------------------------------------------------------+
+; Registers Removed During Synthesis                         ;
++---------------------------------------+--------------------+
+; Register name                         ; Reason for Removal ;
++---------------------------------------+--------------------+
+; current_state~10                      ; Lost fanout        ;
+; current_state~11                      ; Lost fanout        ;
+; current_state~12                      ; Lost fanout        ;
+; current_state~13                      ; Lost fanout        ;
+; Total Number of Removed Registers = 4 ;                    ;
++---------------------------------------+--------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 293   ;
+; Number of registers using Synchronous Clear  ; 269   ;
+; Number of registers using Synchronous Load   ; 14    ;
+; Number of registers using Asynchronous Clear ; 280   ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 276   ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++--------------------------------------------------+
+; Inverted Register Statistics                     ;
++----------------------------------------+---------+
+; Inverted Register                      ; Fan out ;
++----------------------------------------+---------+
+; cycle_counter_direction                ; 9       ;
+; Total number of inverted registers = 1 ;         ;
++----------------------------------------+---------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                 ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                       ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------+
+; 5:1                ; 6 bits    ; 18 LEs        ; 6 LEs                ; 12 LEs                 ; Yes        ; |top_module|words_count[4]                       ;
+; 5:1                ; 6 bits    ; 18 LEs        ; 6 LEs                ; 12 LEs                 ; Yes        ; |top_module|cycle_counter1[3]                    ;
+; 5:1                ; 8 bits    ; 24 LEs        ; 0 LEs                ; 24 LEs                 ; Yes        ; |top_module|inner_buffer[31][6]                  ;
+; 8:1                ; 6 bits    ; 30 LEs        ; 12 LEs               ; 18 LEs                 ; Yes        ; |top_module|words_counter[3]                     ;
+; 34:1               ; 8 bits    ; 176 LEs       ; 168 LEs              ; 8 LEs                  ; Yes        ; |top_module|data_o_r[0]                          ;
+; 10:1               ; 8 bits    ; 48 LEs        ; 16 LEs               ; 32 LEs                 ; Yes        ; |top_module|inner_buffer[30][1]                  ;
+; 10:1               ; 8 bits    ; 48 LEs        ; 16 LEs               ; 32 LEs                 ; Yes        ; |top_module|inner_buffer[29][4]                  ;
+; 10:1               ; 8 bits    ; 48 LEs        ; 16 LEs               ; 32 LEs                 ; Yes        ; |top_module|inner_buffer[28][0]                  ;
+; 10:1               ; 8 bits    ; 48 LEs        ; 16 LEs               ; 32 LEs                 ; Yes        ; |top_module|inner_buffer[27][2]                  ;
+; 10:1               ; 8 bits    ; 48 LEs        ; 16 LEs               ; 32 LEs                 ; Yes        ; |top_module|inner_buffer[26][2]                  ;
+; 10:1               ; 8 bits    ; 48 LEs        ; 16 LEs               ; 32 LEs                 ; Yes        ; |top_module|inner_buffer[25][2]                  ;
+; 10:1               ; 8 bits    ; 48 LEs        ; 16 LEs               ; 32 LEs                 ; Yes        ; |top_module|inner_buffer[24][5]                  ;
+; 10:1               ; 8 bits    ; 48 LEs        ; 16 LEs               ; 32 LEs                 ; Yes        ; |top_module|inner_buffer[23][7]                  ;
+; 10:1               ; 8 bits    ; 48 LEs        ; 16 LEs               ; 32 LEs                 ; Yes        ; |top_module|inner_buffer[22][5]                  ;
+; 10:1               ; 8 bits    ; 48 LEs        ; 16 LEs               ; 32 LEs                 ; Yes        ; |top_module|inner_buffer[21][7]                  ;
+; 10:1               ; 8 bits    ; 48 LEs        ; 16 LEs               ; 32 LEs                 ; Yes        ; |top_module|inner_buffer[20][5]                  ;
+; 10:1               ; 8 bits    ; 48 LEs        ; 16 LEs               ; 32 LEs                 ; Yes        ; |top_module|inner_buffer[19][6]                  ;
+; 10:1               ; 8 bits    ; 48 LEs        ; 16 LEs               ; 32 LEs                 ; Yes        ; |top_module|inner_buffer[18][6]                  ;
+; 10:1               ; 8 bits    ; 48 LEs        ; 16 LEs               ; 32 LEs                 ; Yes        ; |top_module|inner_buffer[17][6]                  ;
+; 10:1               ; 8 bits    ; 48 LEs        ; 16 LEs               ; 32 LEs                 ; Yes        ; |top_module|inner_buffer[16][6]                  ;
+; 10:1               ; 8 bits    ; 48 LEs        ; 16 LEs               ; 32 LEs                 ; Yes        ; |top_module|inner_buffer[15][6]                  ;
+; 10:1               ; 8 bits    ; 48 LEs        ; 16 LEs               ; 32 LEs                 ; Yes        ; |top_module|inner_buffer[14][6]                  ;
+; 10:1               ; 8 bits    ; 48 LEs        ; 16 LEs               ; 32 LEs                 ; Yes        ; |top_module|inner_buffer[13][5]                  ;
+; 10:1               ; 8 bits    ; 48 LEs        ; 16 LEs               ; 32 LEs                 ; Yes        ; |top_module|inner_buffer[12][6]                  ;
+; 10:1               ; 8 bits    ; 48 LEs        ; 16 LEs               ; 32 LEs                 ; Yes        ; |top_module|inner_buffer[11][6]                  ;
+; 10:1               ; 8 bits    ; 48 LEs        ; 16 LEs               ; 32 LEs                 ; Yes        ; |top_module|inner_buffer[10][1]                  ;
+; 10:1               ; 8 bits    ; 48 LEs        ; 16 LEs               ; 32 LEs                 ; Yes        ; |top_module|inner_buffer[9][7]                   ;
+; 10:1               ; 8 bits    ; 48 LEs        ; 16 LEs               ; 32 LEs                 ; Yes        ; |top_module|inner_buffer[8][2]                   ;
+; 10:1               ; 8 bits    ; 48 LEs        ; 16 LEs               ; 32 LEs                 ; Yes        ; |top_module|inner_buffer[7][7]                   ;
+; 10:1               ; 8 bits    ; 48 LEs        ; 16 LEs               ; 32 LEs                 ; Yes        ; |top_module|inner_buffer[6][4]                   ;
+; 10:1               ; 8 bits    ; 48 LEs        ; 16 LEs               ; 32 LEs                 ; Yes        ; |top_module|inner_buffer[5][0]                   ;
+; 10:1               ; 8 bits    ; 48 LEs        ; 16 LEs               ; 32 LEs                 ; Yes        ; |top_module|inner_buffer[4][3]                   ;
+; 10:1               ; 8 bits    ; 48 LEs        ; 16 LEs               ; 32 LEs                 ; Yes        ; |top_module|inner_buffer[3][3]                   ;
+; 10:1               ; 8 bits    ; 48 LEs        ; 16 LEs               ; 32 LEs                 ; Yes        ; |top_module|inner_buffer[2][3]                   ;
+; 10:1               ; 8 bits    ; 48 LEs        ; 16 LEs               ; 32 LEs                 ; Yes        ; |top_module|inner_buffer[1][3]                   ;
+; 10:1               ; 8 bits    ; 48 LEs        ; 0 LEs                ; 48 LEs                 ; Yes        ; |top_module|inner_buffer[0][3]                   ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 14 LEs               ; 0 LEs                  ; No         ; |top_module|decoder:decoder_instance|ShiftRight0 ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 14 LEs               ; 0 LEs                  ; No         ; |top_module|decoder:decoder_instance|ShiftRight0 ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |top_module|decoder:decoder_instance|ShiftRight0 ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |top_module|decoder:decoder_instance|ShiftRight0 ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |top_module|decoder:decoder_instance|ShiftRight0 ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |top_module|decoder:decoder_instance|ShiftRight0 ;
+; 9:1                ; 2 bits    ; 12 LEs        ; 8 LEs                ; 4 LEs                  ; No         ; |top_module|Selector263                          ;
+; 10:1               ; 2 bits    ; 12 LEs        ; 8 LEs                ; 4 LEs                  ; No         ; |top_module|Selector266                          ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------+
+
+
++----------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Top-level Entity: |top_module ;
++----------------+-------+---------------------------------------------------+
+; Parameter Name ; Value ; Type                                              ;
++----------------+-------+---------------------------------------------------+
+; DATA_WIDTH     ; 8     ; Signed Integer                                    ;
+; ADR_WIDTH      ; 5     ; Signed Integer                                    ;
++----------------+-------+---------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: decoder:decoder_instance ;
++----------------+-------+----------------------------------------------+
+; Parameter Name ; Value ; Type                                         ;
++----------------+-------+----------------------------------------------+
+; ADR_WIDTH      ; 5     ; Signed Integer                               ;
++----------------+-------+----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: comparator:instance_of_comparators[1].comparators ;
++----------------+-------+-----------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                  ;
++----------------+-------+-----------------------------------------------------------------------+
+; DATA_WIDTH     ; 8     ; Signed Integer                                                        ;
++----------------+-------+-----------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: comparator:instance_of_comparators[2].comparators ;
++----------------+-------+-----------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                  ;
++----------------+-------+-----------------------------------------------------------------------+
+; DATA_WIDTH     ; 8     ; Signed Integer                                                        ;
++----------------+-------+-----------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: comparator:instance_of_comparators[3].comparators ;
++----------------+-------+-----------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                  ;
++----------------+-------+-----------------------------------------------------------------------+
+; DATA_WIDTH     ; 8     ; Signed Integer                                                        ;
++----------------+-------+-----------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: comparator:instance_of_comparators[4].comparators ;
++----------------+-------+-----------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                  ;
++----------------+-------+-----------------------------------------------------------------------+
+; DATA_WIDTH     ; 8     ; Signed Integer                                                        ;
++----------------+-------+-----------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: comparator:instance_of_comparators[5].comparators ;
++----------------+-------+-----------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                  ;
++----------------+-------+-----------------------------------------------------------------------+
+; DATA_WIDTH     ; 8     ; Signed Integer                                                        ;
++----------------+-------+-----------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: comparator:instance_of_comparators[6].comparators ;
++----------------+-------+-----------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                  ;
++----------------+-------+-----------------------------------------------------------------------+
+; DATA_WIDTH     ; 8     ; Signed Integer                                                        ;
++----------------+-------+-----------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: comparator:instance_of_comparators[7].comparators ;
++----------------+-------+-----------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                  ;
++----------------+-------+-----------------------------------------------------------------------+
+; DATA_WIDTH     ; 8     ; Signed Integer                                                        ;
++----------------+-------+-----------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: comparator:instance_of_comparators[8].comparators ;
++----------------+-------+-----------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                  ;
++----------------+-------+-----------------------------------------------------------------------+
+; DATA_WIDTH     ; 8     ; Signed Integer                                                        ;
++----------------+-------+-----------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: comparator:instance_of_comparators[9].comparators ;
++----------------+-------+-----------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                  ;
++----------------+-------+-----------------------------------------------------------------------+
+; DATA_WIDTH     ; 8     ; Signed Integer                                                        ;
++----------------+-------+-----------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: comparator:instance_of_comparators[10].comparators ;
++----------------+-------+------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                   ;
++----------------+-------+------------------------------------------------------------------------+
+; DATA_WIDTH     ; 8     ; Signed Integer                                                         ;
++----------------+-------+------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: comparator:instance_of_comparators[11].comparators ;
++----------------+-------+------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                   ;
++----------------+-------+------------------------------------------------------------------------+
+; DATA_WIDTH     ; 8     ; Signed Integer                                                         ;
++----------------+-------+------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: comparator:instance_of_comparators[12].comparators ;
++----------------+-------+------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                   ;
++----------------+-------+------------------------------------------------------------------------+
+; DATA_WIDTH     ; 8     ; Signed Integer                                                         ;
++----------------+-------+------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: comparator:instance_of_comparators[13].comparators ;
++----------------+-------+------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                   ;
++----------------+-------+------------------------------------------------------------------------+
+; DATA_WIDTH     ; 8     ; Signed Integer                                                         ;
++----------------+-------+------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: comparator:instance_of_comparators[14].comparators ;
++----------------+-------+------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                   ;
++----------------+-------+------------------------------------------------------------------------+
+; DATA_WIDTH     ; 8     ; Signed Integer                                                         ;
++----------------+-------+------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: comparator:instance_of_comparators[15].comparators ;
++----------------+-------+------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                   ;
++----------------+-------+------------------------------------------------------------------------+
+; DATA_WIDTH     ; 8     ; Signed Integer                                                         ;
++----------------+-------+------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: comparator:instance_of_comparators[16].comparators ;
++----------------+-------+------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                   ;
++----------------+-------+------------------------------------------------------------------------+
+; DATA_WIDTH     ; 8     ; Signed Integer                                                         ;
++----------------+-------+------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: comparator:instance_of_comparators[17].comparators ;
++----------------+-------+------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                   ;
++----------------+-------+------------------------------------------------------------------------+
+; DATA_WIDTH     ; 8     ; Signed Integer                                                         ;
++----------------+-------+------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: comparator:instance_of_comparators[18].comparators ;
++----------------+-------+------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                   ;
++----------------+-------+------------------------------------------------------------------------+
+; DATA_WIDTH     ; 8     ; Signed Integer                                                         ;
++----------------+-------+------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: comparator:instance_of_comparators[19].comparators ;
++----------------+-------+------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                   ;
++----------------+-------+------------------------------------------------------------------------+
+; DATA_WIDTH     ; 8     ; Signed Integer                                                         ;
++----------------+-------+------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: comparator:instance_of_comparators[20].comparators ;
++----------------+-------+------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                   ;
++----------------+-------+------------------------------------------------------------------------+
+; DATA_WIDTH     ; 8     ; Signed Integer                                                         ;
++----------------+-------+------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: comparator:instance_of_comparators[21].comparators ;
++----------------+-------+------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                   ;
++----------------+-------+------------------------------------------------------------------------+
+; DATA_WIDTH     ; 8     ; Signed Integer                                                         ;
++----------------+-------+------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: comparator:instance_of_comparators[22].comparators ;
++----------------+-------+------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                   ;
++----------------+-------+------------------------------------------------------------------------+
+; DATA_WIDTH     ; 8     ; Signed Integer                                                         ;
++----------------+-------+------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: comparator:instance_of_comparators[23].comparators ;
++----------------+-------+------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                   ;
++----------------+-------+------------------------------------------------------------------------+
+; DATA_WIDTH     ; 8     ; Signed Integer                                                         ;
++----------------+-------+------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: comparator:instance_of_comparators[24].comparators ;
++----------------+-------+------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                   ;
++----------------+-------+------------------------------------------------------------------------+
+; DATA_WIDTH     ; 8     ; Signed Integer                                                         ;
++----------------+-------+------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: comparator:instance_of_comparators[25].comparators ;
++----------------+-------+------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                   ;
++----------------+-------+------------------------------------------------------------------------+
+; DATA_WIDTH     ; 8     ; Signed Integer                                                         ;
++----------------+-------+------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: comparator:instance_of_comparators[26].comparators ;
++----------------+-------+------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                   ;
++----------------+-------+------------------------------------------------------------------------+
+; DATA_WIDTH     ; 8     ; Signed Integer                                                         ;
++----------------+-------+------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: comparator:instance_of_comparators[27].comparators ;
++----------------+-------+------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                   ;
++----------------+-------+------------------------------------------------------------------------+
+; DATA_WIDTH     ; 8     ; Signed Integer                                                         ;
++----------------+-------+------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: comparator:instance_of_comparators[28].comparators ;
++----------------+-------+------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                   ;
++----------------+-------+------------------------------------------------------------------------+
+; DATA_WIDTH     ; 8     ; Signed Integer                                                         ;
++----------------+-------+------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: comparator:instance_of_comparators[29].comparators ;
++----------------+-------+------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                   ;
++----------------+-------+------------------------------------------------------------------------+
+; DATA_WIDTH     ; 8     ; Signed Integer                                                         ;
++----------------+-------+------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: comparator:instance_of_comparators[30].comparators ;
++----------------+-------+------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                   ;
++----------------+-------+------------------------------------------------------------------------+
+; DATA_WIDTH     ; 8     ; Signed Integer                                                         ;
++----------------+-------+------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: comparator:instance_of_comparators[31].comparators ;
++----------------+-------+------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                   ;
++----------------+-------+------------------------------------------------------------------------+
+; DATA_WIDTH     ; 8     ; Signed Integer                                                         ;
++----------------+-------+------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "comparator:instance_of_comparators[31].comparators"                                            ;
++-----------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port            ; Type   ; Severity ; Details                                                                             ;
++-----------------+--------+----------+-------------------------------------------------------------------------------------+
+; comp_out_word_B ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-----------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "decoder:decoder_instance"                                                                                                                                                                 ;
++---------------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port          ; Type   ; Severity ; Details                                                                                                                                                                          ;
++---------------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; decoder_i     ; Input  ; Warning  ; Input port expression (6 bits) is wider than the input port (5 bits) it drives.  The 1 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; decoder_o[31] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                                                                              ;
++---------------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; arriav_ff             ; 293                         ;
+;     CLR               ; 16                          ;
+;     ENA               ; 1                           ;
+;     ENA CLR SCLR      ; 256                         ;
+;     ENA CLR SCLR SLD  ; 8                           ;
+;     ENA SCLR          ; 5                           ;
+;     ENA SLD           ; 6                           ;
+;     plain             ; 1                           ;
+; arriav_lcell_comb     ; 815                         ;
+;     arith             ; 6                           ;
+;         1 data inputs ; 1                           ;
+;         4 data inputs ; 1                           ;
+;         5 data inputs ; 4                           ;
+;     extend            ; 1                           ;
+;         7 data inputs ; 1                           ;
+;     normal            ; 802                         ;
+;         0 data inputs ; 1                           ;
+;         2 data inputs ; 72                          ;
+;         3 data inputs ; 21                          ;
+;         4 data inputs ; 78                          ;
+;         5 data inputs ; 367                         ;
+;         6 data inputs ; 263                         ;
+;     shared            ; 6                           ;
+;         2 data inputs ; 6                           ;
+; boundary_port         ; 25                          ;
+;                       ;                             ;
+; Max LUT depth         ; 5.00                        ;
+; Average LUT depth     ; 3.75                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:03     ;
++----------------+--------------+
 
 
 +-------------------------------+
@@ -162,7 +794,7 @@ https://fpgasoftware.intel.com/eula.
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Mon Nov 29 00:10:23 2021
+    Info: Processing started: Mon Nov 29 00:59:47 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off test_vniirt -c test_vniirt
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -180,14 +812,29 @@ Warning (10236): Verilog HDL Implicit Net warning at testbench.v(51): created im
 Warning (10236): Verilog HDL Implicit Net warning at testbench.v(52): created implicit net for "out_sop" File: G:/fpga_projects/Quartus/test_vniirt/src/VerilogHDL/testbench.v Line: 52
 Warning (10236): Verilog HDL Implicit Net warning at testbench.v(53): created implicit net for "out_eop" File: G:/fpga_projects/Quartus/test_vniirt/src/VerilogHDL/testbench.v Line: 53
 Info (12127): Elaborating entity "top_module" for the top level hierarchy
-Error (10232): Verilog HDL error at top_module.v(129): index -1 cannot fall outside the declared range [31:0] for vector "oen_for_comparators" File: G:/fpga_projects/Quartus/test_vniirt/src/VerilogHDL/top_module.v Line: 129
-Error (12153): Can't elaborate top-level user hierarchy
+Warning (10230): Verilog HDL assignment warning at top_module.v(182): truncated value with size 32 to match size of target (6) File: G:/fpga_projects/Quartus/test_vniirt/src/VerilogHDL/top_module.v Line: 182
+Warning (10230): Verilog HDL assignment warning at top_module.v(190): truncated value with size 32 to match size of target (6) File: G:/fpga_projects/Quartus/test_vniirt/src/VerilogHDL/top_module.v Line: 190
+Warning (10230): Verilog HDL assignment warning at top_module.v(205): truncated value with size 32 to match size of target (6) File: G:/fpga_projects/Quartus/test_vniirt/src/VerilogHDL/top_module.v Line: 205
+Warning (10230): Verilog HDL assignment warning at top_module.v(209): truncated value with size 32 to match size of target (6) File: G:/fpga_projects/Quartus/test_vniirt/src/VerilogHDL/top_module.v Line: 209
+Warning (10230): Verilog HDL assignment warning at top_module.v(214): truncated value with size 32 to match size of target (6) File: G:/fpga_projects/Quartus/test_vniirt/src/VerilogHDL/top_module.v Line: 214
+Info (12128): Elaborating entity "decoder" for hierarchy "decoder:decoder_instance" File: G:/fpga_projects/Quartus/test_vniirt/src/VerilogHDL/top_module.v Line: 82
+Warning (10036): Verilog HDL or VHDL warning at comparator.v(45): object "decoder_i_prev" assigned a value but never read File: G:/fpga_projects/Quartus/test_vniirt/src/VerilogHDL/comparator.v Line: 45
+Info (12128): Elaborating entity "comparator" for hierarchy "comparator:instance_of_comparators[1].comparators" File: G:/fpga_projects/Quartus/test_vniirt/src/VerilogHDL/top_module.v Line: 97
+Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Info (286030): Timing-Driven Synthesis is running
+Info (17049): 4 registers lost all their fanouts during netlist optimizations.
 Info (144001): Generated suppressed messages file G:/fpga_projects/Quartus/test_vniirt/output_files/test_vniirt.map.smsg
-Error: Quartus Prime Analysis & Synthesis was unsuccessful. 2 errors, 5 warnings
-    Error: Peak virtual memory: 634 megabytes
-    Error: Processing ended: Mon Nov 29 00:10:32 2021
-    Error: Elapsed time: 00:00:09
-    Error: Total CPU time (on all processors): 00:00:19
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 856 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 13 input pins
+    Info (21059): Implemented 12 output pins
+    Info (21061): Implemented 831 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 12 warnings
+    Info: Peak virtual memory: 704 megabytes
+    Info: Processing ended: Mon Nov 29 01:00:00 2021
+    Info: Elapsed time: 00:00:13
+    Info: Total CPU time (on all processors): 00:00:24
 
 
 +------------------------------------------+
